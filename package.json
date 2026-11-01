@@ -1,0 +1,15 @@
+{
+  "name": "engineering-data-workbench",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A schema-driven data workbench with review, attachments, audit and version recovery.",
+  "license": "MIT",
+  "engines": { "node": ">=22.12.0" },
+  "scripts": {
+    "dev": "node server/start.cjs",
+    "build": "vite build --config vite.config.mts",
+    "test": "node server/start.cjs --compile-only && node --test tests/*.test.cjs"
+  },
+  "dependencies": { "express": "^4.22.2", "exceljs": "^4.4.0", "jszip": "^3.10.2", "react": "^19.2.0", "react-dom": "^19.2.0", "lucide-react": "^0.577.0" },
+  "devDependencies": { "typescript": "^5.9.2", "vite": "^8.0.0", "@types/react": "^19.2.0", "@types/react-dom": "^19.2.0" }
+}
